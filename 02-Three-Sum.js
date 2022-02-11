@@ -16,7 +16,7 @@ const threeSum = (nums) => {
         ans.push([nums[i], nums[left], nums[right]])
 
         while (nums[left] === nums[left + 1]) left++
-        while (nums[right] === nums[right + 1]) right--
+        while (nums[right] === nums[right - 1]) right--
         left++
         right--
       } else if (sum > target) {
